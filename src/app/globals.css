@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-obsidian: #0B0A09;
+  --copper: #C87D4B;
+  --gold: #D4AF37;
+  --bone: #F4EFE6;
+}
+
+html, body {
+  background-color: #0B0A09;
+  color: #F4EFE6;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  font-family: var(--font-jakarta), sans-serif;
+}
+
+.font-serif-editorial {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* Capa de grano artístico sutil (3.5% opacidad) estilo Pear / Awwwards */
+.film-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
